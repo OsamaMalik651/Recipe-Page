@@ -232,3 +232,51 @@ div.stat:nth-child(1) > .stats > span {
   margin-top: 92px;
   margin-bottom: 0px;
 }
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 0;
+    max-width: none;
+    padding-top: 32px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .heading > h1 {
+    font-size: 24px;
+  }
+  .heading > div > p {
+    font-size: 12px;
+  }
+  .recipe__section {
+    flex-direction: column-reverse;
+  }
+  .recipe__stats {
+    max-width: 100%;
+    height: fit-content;
+    filter: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    border-radius: 0;
+  }
+  .stat {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+  }
+  .stat > .stats {
+    width: 100%;
+  }
+  div.stat:nth-child(1) {
+    width: 100%;
+  }
+  .stat > .icon > img {
+    color: #4f4f4f;
+    width: 14px;
+  }
+  .stat > .stats > p {
+    font-size: 8px;
+  }
+  div.stat:nth-child(1) > .stats > span {
+    font-size: 10px;
+  }
+}
